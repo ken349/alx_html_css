@@ -1,15 +1,41 @@
-/* base.css */
+/* Base styles for consistent structure */
+
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f8f8f8;
+  padding: 1rem;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
 }
 
 main {
-  flex: 1;
+  display: flex;
 }
 
-h1, h2, h3 {
-  font-family: Georgia, serif;
+footer {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+/* Responsive layout for small screens */
+.works_on_smartphone main {
+  display: block;
+}
+
+.works_on_smartphone article,
+.works_on_smartphone aside {
+  width: 100%;
 }

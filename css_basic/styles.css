@@ -1,1 +1,36 @@
 /* styles.css - to be filled with page-specific styles */
+/* Make the entire body a flex container in column layout */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Make the main container a flex row */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+/* Let the article take 2/3 of the main space */
+article {
+  flex: 2;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+/* Let the aside take 1/3 of the main space */
+aside {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+/* Optional enhancements for better visibility */
+header, footer {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  text-align: center;
+}
